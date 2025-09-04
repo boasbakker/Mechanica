@@ -50,7 +50,7 @@ We provide various examples showcasing, e.g., calculations.
 ```
 
 ```{tip} Python
-We include in-browser python code, as well as downloadable .py files which can be executed locally. If there is an in-browser, press the ON-button to 'enable compute'.
+We include in-browser python code, as well as downloadable .py files which can be executed locally. If there is an in-browser, press the ON-button to 'enable compute'. Try it by pushing the ON-button and subsequently the play button and see the output in de code-cell below.
 ```
 
 ```{code-cell} python
@@ -72,7 +72,7 @@ This is the first version of this book. Although many have work on it and severa
 * Prof.Dr. Bernd Rieger, Department of Imaging Physics, Delft University of Technology
 * Dr. Freek Pols, Science \& Engineering Education, Delft University of Technology
 
-Special thanks to Hanna den Hertog for (re)making most of the drawings, Luuk Fröling for his technical support and Dion Hoeksema for converting the .js scripts to .py files.
+Special thanks to Hanna den Hertog for (re)making most of the drawings, Luuk Fröling for his technical support and Dion Hoeksema for converting the .js scripts to .py files. Also thanks to Vebe Helmes, Alexander Lopes-Cardozo, Sep Schouwenaar and Winston de Greef for their comments and suggestions.
 
 
 ### About the authors

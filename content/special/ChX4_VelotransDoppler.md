@@ -73,14 +73,25 @@ ct'_2-ct'_1 &=& \gamma \left ( ct_2 -\frac{V}{c} x_2 \right ) -\gamma \left ( ct
 
 From the last line it is clear that also the $y,z$ components of the velocity $\vec{u}$ will be influenced by the transformation although the relative motion between the two observers is only along the $x$-direction. Substituting the expressions for the space and time difference into $v'_{x'}$, we obtain
 
-
-$$
+```{warning} Changed below
+<!-- $$
 \begin{array}{rcl}
 u'_{x'}&=&  \displaystyle{\frac{\gamma \Delta x - \gamma \frac{V}{c}\Delta ct}{\gamma \Delta ct - \gamma \frac{V}{c}\Delta x} = \frac{\frac{\Delta x}{\Delta t}-V}{1-\frac{V}{c^2}\frac{\Delta x}{\Delta t}}}\\
 \\
 &=& \displaystyle{\frac{u_x-V}{1-\frac{Vu_x}{c^2}}}
 \end{array}
+$$ -->
+```
 $$
+align(
+  u'_{x'} &= \frac{\gamma \Delta x - \gamma \frac{V}{c}\Delta c t}
+                 {\gamma \Delta c t - \gamma \frac{V}{c}\Delta x}
+           = \frac{\frac{\Delta x}{\Delta t} - V}
+                  {1 - \frac{V}{c^2} \frac{\Delta x}{\Delta t}} \\
+          &= \frac{u_x - V}{1 - \frac{V u_x}{c^2}}
+)
+$$
+
 
 For the transverse components $y,z$, we obtain due to the change of the time interval
 
@@ -118,7 +129,7 @@ Effect on sound waves due to motion.
 For the case of an observer with speed $v_{obs}$ and speed of sound in the medium $u$ and moving source $v_{src}$ (e.g. car) the classical formula of the frequency shift is
 
 $$
-f_{obs} = f_{src}\frac{u\pm v_{obs}}{u\mp v_{src}}
+f_{obs} = f_{src}\frac{u\pm v_{obs}}{u ∓ v_{src}}
 $$
 
 where for the stationary observer and medium, we have $+/-$ and for the moving observer and stationary source $-/+$.

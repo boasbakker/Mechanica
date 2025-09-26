@@ -1,6 +1,7 @@
-/* Custom experiment admonition, based on documentation (see https://next.jupyterbook.org/plugins/directives-and-roles#create-a-custom-admonition). 
-*   css file (custom.css) included in style folder. 
-*/
+// Add 'experiment' directive support for PDF formatting in Myst. Transform only works if --pdf flag used during build. e.g. myst build --pdf
+// Based on https://next.jupyterbook.org/plugins/directives-and-roles#create-a-custom-admonition
+// Add CSS for formatting
+
 
 const experiment = {
   name: "experiment",
@@ -15,16 +16,9 @@ const experiment = {
     let title = data.arg.trim();
     let body = data.body.trim();
 
-    // console.log("[experiment plugin] ", data.arg, data.body);
-    // console.log("[experiment plugin] ", ctx.parseMyst(body));
-    // console.log("[experiment plugin] ", ctx.parseMyst(body)["children"]);
-    // console.log("[experiment plugin] ", ctx.parseMyst(body)["children"][0]);
-
-
-
     const admonition = {
         "type": "admonition",
-        "kind": "admonition",
+        "kind": "note",
         "class": "admonition-experiment",  //Add class (custom.css)
         "icon": false,
         "children": [
@@ -53,8 +47,8 @@ const experimentTransform = {
   doc: "Replace custom experiment admonitions in PDF builds.",
   stage: "document",
   plugin: (opts, utils) => (tree) => {
-    // Detect if we are building a PDF
-    const isPDF = process.argv.some(arg => arg.includes("pdf"));
+    // Detect if we are building a PDF or typst
+    const isPDF = process.argv.some(arg => arg.includes("pdf") || arg.includes("typst"));
 
     // (Optional) keep a map if you later want to cross-link experiments
     const labelMap = new Map();
@@ -126,8 +120,6 @@ const experimentTransform = {
   },
 };
 
-
-
 const plugin = {
   name: "experiment",
   directives: [experiment],
@@ -135,4 +127,3 @@ const plugin = {
 };
 
 export default plugin;
-

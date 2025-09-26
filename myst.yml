@@ -28,6 +28,7 @@ project:
       template: https://github.com/myst-templates/plain_typst_book.git 
       output: exports/MechaRela.pdf
       id: output-pdf1
+      logo: logo_TUD.png
 
 
   # downloads:
@@ -39,9 +40,6 @@ project:
     binder:
       repo: https://github.com/executablebooks/thebe-binder-base
     
-  options:
-    # cover: 
-    logo: logo_TUD.png
 
 ########################################################################  
   toc:
@@ -67,21 +65,21 @@ project:
           children:
             - file: content/classic/Ch6_ex.ipynb
 
-        - file: content/classic/Ch7_ConservationEquations.ipynb
-          children:
-            - file: content/classic/Ch7_ex.ipynb
+        # - file: content/classic/Ch7_ConservationEquations.ipynb
+        #   children:
+        #     - file: content/classic/Ch7_ex.ipynb
 
-        - file: content/classic/Ch8_Oscillations.ipynb
-          children:
-            - file: content/classic/Ch8_ex.ipynb
+        # - file: content/classic/Ch8_Oscillations.ipynb
+        #   children:
+        #     - file: content/classic/Ch8_ex.ipynb
             
-        - file: content/classic/Ch9_Collisions.ipynb
-          children:
-            - file: content/classic/Ch9_ex.ipynb
+        # - file: content/classic/Ch9_Collisions.ipynb
+        #   children:
+        #     - file: content/classic/Ch9_ex.ipynb
         
-        - file: content/classic/ChX0_TwoBody.ipynb
-          children:
-            - file: content/classic/ChX0_ex.ipynb
+        # - file: content/classic/ChX0_TwoBody.ipynb
+        #   children:
+        #     - file: content/classic/ChX0_ex.ipynb
     
 
 #######################################################################
@@ -100,8 +98,8 @@ project:
           children:
             - file: content/special/ChX5_ex.md
         - file: content/special/ChX6_FourMomentum.md
-          children:
-            - file: content/special/ChX6_ex.md
+        #   children:
+        #     - file: content/special/ChX6_ex.md
         - file: content/special/ChX7_RelDynColl.md
           children:
             - file: content/special/ChX7_ex.md

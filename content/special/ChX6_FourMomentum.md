@@ -179,7 +179,7 @@ $$
 
 How did we do this? We apply integration by parts. below is the full derivation. If you have difficulties following the math: don't worry, you will get this in your Calculus courses. For now, if you struggles with it: just skip the derivation and remember the outcome given above.
 
-````{only} html
++++{"tag": "no-typst"}
 ```{math}
 \begin{array}{rcl}
 \Delta E_{kin} &=& \displaystyle{m[\vec{u}\cdot \gamma(u)\vec{u}]_0^{\tilde{u}} - m\int_0^{\tilde{u}} \gamma(u)\vec{u} \cdot d\vec{u}}\\
@@ -192,9 +192,12 @@ How did we do this? We apply integration by parts. below is the full derivation.
 &=& mc^2(\gamma(\tilde{u})-1)
 \end{array}
 ```
-````
++++
 
-```{only} typst
+```{warning} not in pdf yet
+```
+<!-- 
+```{raw:typst}
 $$
 align(
   \Delta E_{kin} &= m[\vec{u}\cdot \gamma(u)\vec{u}]_0^{\tilde{u}}
@@ -225,8 +228,8 @@ align(
                  &= mc^2\bigl(\gamma(\tilde{u}) - 1\bigr)
 )
 $$
-
-```
+``` 
+-->
 
 **Integration by parts**
 
@@ -331,7 +334,7 @@ $$
 
 This converts back to $E=mc^2$ in the rest frame.
 
-```{figure} ../images/chx6_einsteintriangle.png
+```{figure} ../images/chx6_einsteintriangle.*
 :label: fig:chx6_einsteintriangle.svg
 :width: 70%
 

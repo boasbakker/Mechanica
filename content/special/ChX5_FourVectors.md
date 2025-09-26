@@ -241,7 +241,7 @@ We plot the coordinate system of $S'$ (<span style="color:blue">blue</span>) in 
 Both lines of $S'$ make the same angle $\alpha$ with the coordinates axis of $S$. They lie symmetric around the light line $x=ct$ (diagonal with $\alpha=45$ deg). The higher the speed $V$ the higher the angle and the closer the lines lie to the light line. See the animation below, where the $(ct',x')$ axis are plotted in the $(ct,x)$ diagram of $S$ for different values of $V/c$.
 
 
-```{figure} ../images/Minkowski_animation.gif
+```{figure} ../images/Minkowski_animation.*
 :label: fig:Minkowski_animation.gif
 :width: 450px
 :align: center
@@ -267,7 +267,7 @@ With this information in hand, we can investigate how events are transferred fro
 In the animation below, we see the effect of different values of $V/c$ on the lines of constant $ct'$ and $x'$ as seen by $S$. For clarity, these are only drawn for $V/c \geq 0$
 
 
-```{figure} ../images/Minkowski2_animation.gif
+```{figure} ../images/Minkowski2_animation.*
 :label: fig:Minkowski2_animation.gif
 :width: 80%
 :align: center
@@ -385,7 +385,7 @@ In the animation below a Minkowski diagram is plotted as $S$ would do. The motio
 The green dashed lines is the grid of $S'$ translated to the world of $S$. The pink dashed lines show the corresponding coordinates of the particle in the world of $S'$: they intersect the $ct'$ and $x'$ axes at the position and time as $S'$ would use. Notice that the clock of $S'$ is indeed slow. Of course the $x'$ coordinate of the particle stays relatively small: $S'$ is 'chasing' the particle.
 
 
-```{figure} ../images/MinkowskiMovingParticle_animation.gif
+```{figure} ../images/MinkowskiMovingParticle_animation.*
 :label: fig:MinkowskiMovingParticle_animation.gif
 :width: 80%
 :align: center

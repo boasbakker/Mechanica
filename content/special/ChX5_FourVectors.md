@@ -53,7 +53,7 @@ Notice directly that the distance $\Delta s^2$ can be negative! (And we are OK w
 It is straightforward to show that the above distance $ds^2$ is indeed a Lorentz Invariant, i.e. $ds'^2 = ds^2$. Suppose we have two events: $E_1: (ct,x,y,z)$ and $E_2: (c(t+dt),x+dx,y+dy,z+dz)$. We can transform these to $S'$ via the standard Lorentz Transformation:
 
 $$
-\begin{array}{rcl}
+\begin{array}{rrccll}
 ct'_2 &=& \gamma \left ( c(t+dt) - \frac{V}{c}(x+dx) \right ) \Rightarrow &cdt' &=& \gamma \left ( cdt - \frac{V}{c}dx \right ) \\
 x'_2 &=& \gamma \left ( (x+dx) - \frac{V}{c}c(t+dt) \right ) \Rightarrow &cdx' &=& \gamma \left ( dx - \frac{V}{c}cdt \right ) \\
 y'_2 &=& y_2 \Rightarrow &dy' &=& dy\\

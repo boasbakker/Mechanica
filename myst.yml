@@ -14,31 +14,22 @@ project:
   github: https://github.com/FreekPols/Mechanica
   copyright: Delft University of Technology, CC BY NC 4.0
   date: 2025-08-25 # YYYY/MM/DD
+  abstract: some abstract
 
   numbering:
     title: true
     headings: true
 
   exports:
-  #   # - format: typst # typst 
-  #   #   output: exports/document_typst.pdf
-  #   #   template: lapreprint-typst
-  #   #   id: output-typst
-    - format: pdf
-      template: curvenote
+    - format: typst
+      template: ./template 
       output: exports/MechaRela.pdf
       id: output-pdf1
-
-    # - format: pdf
-    #   template: curvenote
-    #   output: exports/SpecialRel.pdf
-    #   id: output-pdf2
 
 
   # downloads:
   # #   # - id: output-typst
   #   - id: output-pdf1
-  #   - id: output-pdf2
 
 
   jupyter:
@@ -52,7 +43,7 @@ project:
     - file: content/Credits.md      
       
     - file: content/classic/Mechanics.md
-    # - title: Mechanics
+    - title: Mechanics
       children:    
         - file: content/classic/Ch0_Language.ipynb
           children:
@@ -62,56 +53,56 @@ project:
           children:
             - file: content/classic/Ch2_ex.ipynb
 
-        - file: content/classic/Ch4_WorkEnergy.ipynb
-          children:
-            - file: content/classic/Ch4_ex.ipynb
+        # - file: content/classic/Ch4_WorkEnergy.ipynb
+        #   children:
+        #     - file: content/classic/Ch4_ex.ipynb
 
-        - file: content/classic/Ch6_AngularMomentum.ipynb
-          children:
-            - file: content/classic/Ch6_ex.ipynb
+        # - file: content/classic/Ch6_AngularMomentum.ipynb
+        #   children:
+        #     - file: content/classic/Ch6_ex.ipynb
 
-        - file: content/classic/Ch7_ConservationEquations.ipynb
-          children:
-            - file: content/classic/Ch7_ex.ipynb
+        # - file: content/classic/Ch7_ConservationEquations.ipynb
+        #   children:
+        #     - file: content/classic/Ch7_ex.ipynb
 
-        - file: content/classic/Ch8_Oscillations.ipynb
-          children:
-            - file: content/classic/Ch8_ex.ipynb
+        # - file: content/classic/Ch8_Oscillations.ipynb
+        #   children:
+        #     - file: content/classic/Ch8_ex.ipynb
             
-        - file: content/classic/Ch9_Collisions.ipynb
-          children:
-            - file: content/classic/Ch9_ex.ipynb
+        # - file: content/classic/Ch9_Collisions.ipynb
+        #   children:
+        #     - file: content/classic/Ch9_ex.ipynb
         
-        - file: content/classic/ChX0_TwoBody.ipynb
-          children:
-            - file: content/classic/ChX0_ex.ipynb
+        # - file: content/classic/ChX0_TwoBody.ipynb
+        #   children:
+        #     - file: content/classic/ChX0_ex.ipynb
     
 
 #######################################################################
-    - file: content/special/SpecialRelativity.md
-      children:        
-        - file: content/special/ChX2_CracksInMecha.md
-          children:
-            - file: content/special/ChX2_ex.md
-        - file: content/special/ChX3_IntroSpecialRelativity.md
-          children:
-            - file: content/special/ChX3_ex.md
-        - file: content/special/ChX4_VelotransDoppler.md
-          children:
-            - file: content/special/ChX4_ex.md
-        - file: content/special/ChX5_FourVectors.md
-          children:
-            - file: content/special/ChX5_ex.md
-        - file: content/special/ChX6_FourMomentum.md
-          children:
-            - file: content/special/ChX6_ex.md
-        - file: content/special/ChX7_RelDynColl.md
-          children:
-            - file: content/special/ChX7_ex.md
+    # - file: content/special/SpecialRelativity.md
+    #   children:        
+    #     - file: content/special/ChX2_CracksInMecha.md
+    #       children:
+    #         - file: content/special/ChX2_ex.md
+    #     - file: content/special/ChX3_IntroSpecialRelativity.md
+    #       children:
+    #         - file: content/special/ChX3_ex.md
+    #     - file: content/special/ChX4_VelotransDoppler.md
+    #       children:
+    #         - file: content/special/ChX4_ex.md
+    #     - file: content/special/ChX5_FourVectors.md
+    #       children:
+    #         - file: content/special/ChX5_ex.md
+    #     - file: content/special/ChX6_FourMomentum.md
+    #       children:
+    #         - file: content/special/ChX6_ex.md
+    #     - file: content/special/ChX7_RelDynColl.md
+    #       children:
+    #         - file: content/special/ChX7_ex.md
 
-    - file: content/appendix/appendix.md
-      children:
-        - file: content/appendix/indeces.md
+    # - file: content/appendix/appendix.md
+    #   children:
+    #     - file: content/appendix/indeces.md
 
     # - title: Project
     #   children:
